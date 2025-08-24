@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-heading: "Caveat Brush", cursive;
+  --font-body: "Nunito", sans-serif;
+
+  --color-midnight-blue: #2b3a67;
+  --color-mauve: #e4c1f9;
+  --color-desertsand: #dab49d;
+  --color-linen: #f3e9dc;
+  --color-amaranth-pink: #f694c1;
+  --color-sunny: #ffebf3;
+  --color-brown: #ca8b3d;
+  --color-bulu: #d608ff;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-midnight-blue);
+    color: var(--color-linen);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Add this at the end of src/index.css */
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(https://www.wearewebstars.com/wp-content/uploads/2018/01/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(https://www.wearewebstars.com/wp-content/uploads/2018/01/twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
