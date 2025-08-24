@@ -22,7 +22,7 @@ const FloatingStars = ({ theme }) => {
         { id: 3, position: { bottom: '15%', left: '15%' }, icon: <FaHeart className="text-amaranth-pink/80" />, message: "my one and only Kuchupuchu👨🏻‍❤️‍💋‍👩🏻" },
         { id: 4, position: { bottom: '22%', right: '35%' }, icon: <FaGlobeEurope className="text-blue-300/80" />, message: "To Germany, to the world, to our future together. 🐥" },
         { id: 5, position: { top: '15%', left: '45%' }, icon: <FaHeartbeat className="text-red-400/80" />, message: "I love you moreeee ❤️" },
-        { id: 6, position: { top: '80%', right: '5%' }, icon: <BsShieldFillCheck className="text-green-300/80" />, message: "'Sayaa bhi tera na main du...' I'll always protect you🐧" },
+        { id: 6, position: { top: '80%', right: '5%' }, icon: <BsShieldFillCheck className="text-green-300/80" />, message: "'...Sayaa bhi tera na main du...' I'll always protect you🐧" },
         { id: 7, position: { top: '10%', right: '20%' }, icon: <FaPuzzlePiece className="text-sky-300/80" />, message: "You and I are perfect for each other. Never believe anything else." },
         { id: 8, position: { bottom: '10%', left: '45%' }, icon: <FaHands className="text-brown" />, message: "Keep us in your prayers🫂" },
     ];
