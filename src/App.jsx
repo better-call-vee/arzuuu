@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     const today = new Date();
-    setIsBirthday(true);
+    //setIsBirthday(true);
 
     if (today.getMonth() === 7 && today.getDate() === 29) {
       setIsBirthday(true);
